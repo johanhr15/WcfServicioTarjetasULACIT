@@ -13,5 +13,22 @@ namespace AplicacionWebTarjetas.Views
         {
 
         }
+
+        protected void btnConsultar_Click(object sender, EventArgs e)
+        {
+            using (ServicioTarjetas.TarjetasClient cliente = new ServicioTarjetas.TarjetasClient())
+            {
+                if (string.IsNullOrEmpty(txtBusqueda.Text))
+                {
+                    gvEmisores.DataSource = cliente.ConsultarInformacionTarjeta(txtBusqueda.Text);
+                    gvEmisores.DataBind();
+                }
+                else
+                {
+                    gvEmisores.DataSource = cliente.ConsultarInformacionTarjeta(txtBusqueda.Text);
+                    gvEmisores.DataBind();
+                }
+            }
+        }
     }
 }

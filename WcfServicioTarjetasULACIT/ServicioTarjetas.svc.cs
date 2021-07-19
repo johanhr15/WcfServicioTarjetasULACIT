@@ -14,6 +14,14 @@ namespace WcfServicioTarjetasULACIT
     public class ServicioTarjetas : ITarjetas
     {
 
+        public IEnumerable<Tarjeta> ConsultarInformacionTarjeta(string numero)
+        {
+            using (TARJETAS_SW_ULACITEntities modelo = new TARJETAS_SW_ULACITEntities())
+            {
+                return modelo.Tarjeta.Where(e => e.TAR_NUMERO.Equals(numero)).ToList();
+            }
+        }
+
         public IEnumerable<Emisor> ConsultarEmisores()
         {
 
@@ -90,6 +98,7 @@ namespace WcfServicioTarjetasULACIT
 
             }
         }
+
 
         public string GetData(int value)
         {

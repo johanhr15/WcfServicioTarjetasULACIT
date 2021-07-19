@@ -38,6 +38,12 @@
   <wsdl:message name="ITarjetas_ConsultarEmisorPorNumeroTarjeta_OutputMessage">
     <wsdl:part name="parameters" element="tns:ConsultarEmisorPorNumeroTarjetaResponse" />
   </wsdl:message>
+  <wsdl:message name="ITarjetas_ConsultarInformacionTarjeta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarInformacionTarjeta" />
+  </wsdl:message>
+  <wsdl:message name="ITarjetas_ConsultarInformacionTarjeta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarInformacionTarjetaResponse" />
+  </wsdl:message>
   <wsdl:portType name="ITarjetas">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/ITarjetas/GetData" message="tns:ITarjetas_GetData_InputMessage" />
@@ -58,6 +64,10 @@
     <wsdl:operation name="ConsultarEmisorPorNumeroTarjeta">
       <wsdl:input wsaw:Action="http://tempuri.org/ITarjetas/ConsultarEmisorPorNumeroTarjeta" message="tns:ITarjetas_ConsultarEmisorPorNumeroTarjeta_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ITarjetas/ConsultarEmisorPorNumeroTarjetaResponse" message="tns:ITarjetas_ConsultarEmisorPorNumeroTarjeta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInformacionTarjeta">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITarjetas/ConsultarInformacionTarjeta" message="tns:ITarjetas_ConsultarInformacionTarjeta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITarjetas/ConsultarInformacionTarjetaResponse" message="tns:ITarjetas_ConsultarInformacionTarjeta_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ITarjetas" type="tns:ITarjetas">
@@ -100,6 +110,15 @@
     </wsdl:operation>
     <wsdl:operation name="ConsultarEmisorPorNumeroTarjeta">
       <soap:operation soapAction="http://tempuri.org/ITarjetas/ConsultarEmisorPorNumeroTarjeta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInformacionTarjeta">
+      <soap:operation soapAction="http://tempuri.org/ITarjetas/ConsultarInformacionTarjeta" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

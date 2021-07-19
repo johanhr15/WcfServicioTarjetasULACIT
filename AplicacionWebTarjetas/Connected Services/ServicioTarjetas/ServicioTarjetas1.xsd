@@ -15,4 +15,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Emisor" nillable="true" type="tns:Emisor" />
+  <xs:complexType name="ArrayOfTarjeta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tarjeta" nillable="true" type="tns:Tarjeta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTarjeta" nillable="true" type="tns:ArrayOfTarjeta" />
+  <xs:complexType name="Tarjeta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TAR_CODIGO" type="xs:int" />
+      <xs:element minOccurs="0" name="TAR_CODIGO_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="TAR_ESTADO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAR_FECHA_EMISION" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TAR_FECHA_VENCIMIENTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TAR_NOMBRE_CLIENTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAR_NUMERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAR_SALDO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TAR_TIPO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tarjeta" nillable="true" type="tns:Tarjeta" />
 </xs:schema>

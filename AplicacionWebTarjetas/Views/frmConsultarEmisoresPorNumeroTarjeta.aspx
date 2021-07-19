@@ -11,9 +11,7 @@
     <asp:GridView ID="gvEmisores" runat="server" CssClass="table table-sm" HeaderStyle-BackColor="LightBlue"
         AlternatingRowStyle-BackColor="AliceBlue" AutoGenerateColumns="false">
         <Columns>
-            <asp:BoundField HeaderText="Codigo" DataField="EMI_CODIGO" />
-            <asp:BoundField HeaderText="Descripcion" DataField="EMI_DESCRIPCION" />
-            <asp:BoundField HeaderText="Prefijo" DataField="EMI_PREFIJO" />
+            <asp:BoundField HeaderText="Nombre de Emisor" DataField="EMI_DESCRIPCION" />
             <asp:BoundField HeaderText="Cantidad Max Digitos" DataField="EMI_NUMERO_MAX_DIGITOS" ItemStyle-HorizontalAlign="Right" />
         </Columns>
     </asp:GridView>

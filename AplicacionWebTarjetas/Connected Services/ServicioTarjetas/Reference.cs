@@ -167,6 +167,179 @@ namespace AplicacionWebTarjetas.ServicioTarjetas {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Tarjeta", Namespace="http://schemas.datacontract.org/2004/07/WcfServicioTarjetasULACIT.Models")]
+    [System.SerializableAttribute()]
+    public partial class Tarjeta : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TAR_CODIGOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TAR_CODIGO_CLIENTEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TAR_ESTADOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime TAR_FECHA_EMISIONField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime TAR_FECHA_VENCIMIENTOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TAR_NOMBRE_CLIENTEField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TAR_NUMEROField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal TAR_SALDOField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TAR_TIPOField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TAR_CODIGO {
+            get {
+                return this.TAR_CODIGOField;
+            }
+            set {
+                if ((this.TAR_CODIGOField.Equals(value) != true)) {
+                    this.TAR_CODIGOField = value;
+                    this.RaisePropertyChanged("TAR_CODIGO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TAR_CODIGO_CLIENTE {
+            get {
+                return this.TAR_CODIGO_CLIENTEField;
+            }
+            set {
+                if ((this.TAR_CODIGO_CLIENTEField.Equals(value) != true)) {
+                    this.TAR_CODIGO_CLIENTEField = value;
+                    this.RaisePropertyChanged("TAR_CODIGO_CLIENTE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TAR_ESTADO {
+            get {
+                return this.TAR_ESTADOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TAR_ESTADOField, value) != true)) {
+                    this.TAR_ESTADOField = value;
+                    this.RaisePropertyChanged("TAR_ESTADO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime TAR_FECHA_EMISION {
+            get {
+                return this.TAR_FECHA_EMISIONField;
+            }
+            set {
+                if ((this.TAR_FECHA_EMISIONField.Equals(value) != true)) {
+                    this.TAR_FECHA_EMISIONField = value;
+                    this.RaisePropertyChanged("TAR_FECHA_EMISION");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime TAR_FECHA_VENCIMIENTO {
+            get {
+                return this.TAR_FECHA_VENCIMIENTOField;
+            }
+            set {
+                if ((this.TAR_FECHA_VENCIMIENTOField.Equals(value) != true)) {
+                    this.TAR_FECHA_VENCIMIENTOField = value;
+                    this.RaisePropertyChanged("TAR_FECHA_VENCIMIENTO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TAR_NOMBRE_CLIENTE {
+            get {
+                return this.TAR_NOMBRE_CLIENTEField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TAR_NOMBRE_CLIENTEField, value) != true)) {
+                    this.TAR_NOMBRE_CLIENTEField = value;
+                    this.RaisePropertyChanged("TAR_NOMBRE_CLIENTE");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TAR_NUMERO {
+            get {
+                return this.TAR_NUMEROField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TAR_NUMEROField, value) != true)) {
+                    this.TAR_NUMEROField = value;
+                    this.RaisePropertyChanged("TAR_NUMERO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal TAR_SALDO {
+            get {
+                return this.TAR_SALDOField;
+            }
+            set {
+                if ((this.TAR_SALDOField.Equals(value) != true)) {
+                    this.TAR_SALDOField = value;
+                    this.RaisePropertyChanged("TAR_SALDO");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TAR_TIPO {
+            get {
+                return this.TAR_TIPOField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TAR_TIPOField, value) != true)) {
+                    this.TAR_TIPOField = value;
+                    this.RaisePropertyChanged("TAR_TIPO");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServicioTarjetas.ITarjetas")]
     public interface ITarjetas {
@@ -200,6 +373,12 @@ namespace AplicacionWebTarjetas.ServicioTarjetas {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarEmisorPorNumeroTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarEmisorPorNumeroTarjetaResponse")]
         System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Emisor[]> ConsultarEmisorPorNumeroTarjetaAsync(string numero);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarInformacionTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarInformacionTarjetaResponse")]
+        AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[] ConsultarInformacionTarjeta(string numero);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarInformacionTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarInformacionTarjetaResponse")]
+        System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[]> ConsultarInformacionTarjetaAsync(string numero);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -267,6 +446,14 @@ namespace AplicacionWebTarjetas.ServicioTarjetas {
         
         public System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Emisor[]> ConsultarEmisorPorNumeroTarjetaAsync(string numero) {
             return base.Channel.ConsultarEmisorPorNumeroTarjetaAsync(numero);
+        }
+        
+        public AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[] ConsultarInformacionTarjeta(string numero) {
+            return base.Channel.ConsultarInformacionTarjeta(numero);
+        }
+        
+        public System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[]> ConsultarInformacionTarjetaAsync(string numero) {
+            return base.Channel.ConsultarInformacionTarjetaAsync(numero);
         }
     }
 }
