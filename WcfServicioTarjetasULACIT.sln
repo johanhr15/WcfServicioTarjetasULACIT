@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServicioTarjetasULACIT", "WcfServicioTarjetasULACIT\WcfServicioTarjetasULACIT.csproj", "{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionWebTarjetas", "AplicacionWebTarjetas\AplicacionWebTarjetas.csproj", "{6727D3DB-14C8-4531-839D-3474B9B3C9CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C} = {9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4EE5FF-E77D-46C2-A9A8-0B490B9FFF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6727D3DB-14C8-4531-839D-3474B9B3C9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6727D3DB-14C8-4531-839D-3474B9B3C9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6727D3DB-14C8-4531-839D-3474B9B3C9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6727D3DB-14C8-4531-839D-3474B9B3C9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77F86412-F1E0-49D0-868E-055DDAF2B6FC}
+	EndGlobalSection
+EndGlobal

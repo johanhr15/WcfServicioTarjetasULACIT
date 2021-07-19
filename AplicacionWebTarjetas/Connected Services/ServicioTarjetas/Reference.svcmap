@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eed35622-2b31-480a-b57f-e5f2e0893c0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49584/ServicioTarjetas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioTarjetas.wsdl" MetadataType="Wsdl" ID="1b38f03e-a683-4293-ab2d-9e4b36d82fd9" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?wsdl" />
+    <MetadataFile FileName="ServicioTarjetas.xsd" MetadataType="Schema" ID="45e244f1-9050-4bc2-a2a7-50bcf8ed4c7d" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioTarjetas1.xsd" MetadataType="Schema" ID="e4809104-a345-4a23-9ac7-4a4e0c84b5b7" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServicioTarjetas.disco" MetadataType="Disco" ID="d17f9916-1942-4bb8-9acd-76b4b2b9d490" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?disco" />
+    <MetadataFile FileName="ServicioTarjetas2.xsd" MetadataType="Schema" ID="556ceec6-d25e-493f-873c-293852447580" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioTarjetas3.xsd" MetadataType="Schema" ID="6c572c7b-2746-42d1-bbc0-2dfad09f98bf" SourceId="1" SourceUrl="http://localhost:49584/ServicioTarjetas.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

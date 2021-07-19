@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServicioTarjetasULACIT.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServicioTarjetasULACIT.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEmisor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Emisor" nillable="true" type="tns:Emisor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmisor" nillable="true" type="tns:ArrayOfEmisor" />
+  <xs:complexType name="Emisor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMI_CODIGO" type="xs:int" />
+      <xs:element minOccurs="0" name="EMI_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMI_NUMERO_MAX_DIGITOS" type="xs:int" />
+      <xs:element minOccurs="0" name="EMI_PREFIJO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Emisor" nillable="true" type="tns:Emisor" />
+</xs:schema>
