@@ -204,6 +204,10 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\frmConsultarInformacionTarjeta.aspx" />
+    <Content Include="Views\frmConsultarEmisoresPorDescripcion.aspx" />
+    <Content Include="Views\frmConsultarEmisoresPorNumeroTarjeta.aspx" />
+    <Content Include="Views\frmConsultarTarjetaValidez.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -262,6 +266,34 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConsultarInformacionTarjeta.aspx.cs">
+      <DependentUpon>frmConsultarInformacionTarjeta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmConsultarInformacionTarjeta.aspx.designer.cs">
+      <DependentUpon>frmConsultarInformacionTarjeta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConsultarEmisoresPorDescripcion.aspx.cs">
+      <DependentUpon>frmConsultarEmisoresPorDescripcion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmConsultarEmisoresPorDescripcion.aspx.designer.cs">
+      <DependentUpon>frmConsultarEmisoresPorDescripcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConsultarEmisoresPorNumeroTarjeta.aspx.cs">
+      <DependentUpon>frmConsultarEmisoresPorNumeroTarjeta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmConsultarEmisoresPorNumeroTarjeta.aspx.designer.cs">
+      <DependentUpon>frmConsultarEmisoresPorNumeroTarjeta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmConsultarTarjetaValidez.aspx.cs">
+      <DependentUpon>frmConsultarTarjetaValidez.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmConsultarTarjetaValidez.aspx.designer.cs">
+      <DependentUpon>frmConsultarTarjetaValidez.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

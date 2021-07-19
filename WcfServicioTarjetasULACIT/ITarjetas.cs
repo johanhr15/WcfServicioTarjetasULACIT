@@ -7,8 +7,10 @@ using System.ServiceModel.Web;
 using System.Text;
 using WcfServicioTarjetasULACIT.Models;
 
+
 namespace WcfServicioTarjetasULACIT
 {
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
     public interface ITarjetas
     {
@@ -25,11 +27,14 @@ namespace WcfServicioTarjetasULACIT
         [OperationContract]
         IEnumerable<Emisor> ConsultarEmisoresPorDescripcion(string descripcion);
 
-        // TODO: agregue aquí sus operaciones de servicio
+        [OperationContract]
+        IEnumerable<Emisor> ConsultarEmisorPorNumeroTarjeta(string numero);
+
+        // TODO: Add your service operations here
     }
 
 
-    // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
+    // Use a data contract as illustrated in the sample below to add composite types to service operations.
     [DataContract]
     public class CompositeType
     {

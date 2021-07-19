@@ -9,6 +9,13 @@ namespace AplicacionWebTarjetas
 {
     public partial class SiteMaster : MasterPage
     {
+        protected override void OnInit(EventArgs e)
+        {
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetNoStore();
+            Response.Cache.SetExpires(DateTime.MinValue);
+            base.OnInit(e);
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
