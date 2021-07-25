@@ -17,21 +17,30 @@ namespace WcfServicioTarjetasULACIT
 
         public string ConsultarValidezTarjeta(string numero)
         {
-            string validez = "";
+            
             using (TARJETAS_SW_ULACITEntities modelo = new TARJETAS_SW_ULACITEntities())
             {
+                string estado = "";
                 try
                 {
-                  IList Lista =  modelo.Tarjeta.Where(e => e.TAR_NUMERO.Equals(numero) && e.TAR_ESTADO.Equals("Activa")).ToList();
-                 }
+                    var validez = (from p in modelo.Tarjeta where p.TAR_NUMERO == numero select p).FirstOrDefault();
+                    if (validez.TAR_ESTADO == "Activa" && validez.TAR_FECHA_VENCIMIENTO >= DateTime.Now )
+                    {
+                        estado = "Tarjeta Válida";
+                        return estado;
+                    }
+                    else {
+
+                        estado = "Tarjeta Inválida";
+                        return estado;
+                    }
+                }
                 catch (Exception)
                 {
-                    validez = "invalida";
-                    return validez;
-                    
+                    estado = "Tarjeta Inválida";
+                    return estado;
+
                 }
-                validez = "valida";
-                return validez;
 
             }
         }
@@ -110,11 +119,11 @@ namespace WcfServicioTarjetasULACIT
 
                 if (numero.StartsWith("38"))
                 {
-                    return modelo.Emisor.Where(e => e.EMI_DESCRIPCION.Equals("Diners Club - International")).ToList();
+                    return modelo.Emisor.Where(e => e.EMI_DESCRIPCION.Equals("Diners Club International")).ToList();
                 }
                 if (numero.StartsWith("54"))
                 {
-                    return modelo.Emisor.Where(e => e.EMI_DESCRIPCION.Equals("Diners Club - USA&Canada")).ToList();
+                    return modelo.Emisor.Where(e => e.EMI_DESCRIPCION.Equals("Diners Club USA&Canada")).ToList();
                 }
 
                 else { return modelo.Emisor.Where(e => e.EMI_DESCRIPCION.Equals("")).ToList(); }
