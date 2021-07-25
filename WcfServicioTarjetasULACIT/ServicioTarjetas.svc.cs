@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -14,11 +15,33 @@ namespace WcfServicioTarjetasULACIT
     public class ServicioTarjetas : ITarjetas
     {
 
+        public string ConsultarValidezTarjeta(string numero)
+        {
+            string validez = "";
+            using (TARJETAS_SW_ULACITEntities modelo = new TARJETAS_SW_ULACITEntities())
+            {
+                try
+                {
+                  IList Lista =  modelo.Tarjeta.Where(e => e.TAR_NUMERO.Equals(numero) && e.TAR_ESTADO.Equals("Activa")).ToList();
+                 }
+                catch (Exception)
+                {
+                    validez = "invalida";
+                    return validez;
+                    
+                }
+                validez = "valida";
+                return validez;
+
+            }
+        }
+
         public IEnumerable<Tarjeta> ConsultarInformacionTarjeta(string numero)
         {
             using (TARJETAS_SW_ULACITEntities modelo = new TARJETAS_SW_ULACITEntities())
             {
                 return modelo.Tarjeta.Where(e => e.TAR_NUMERO.Equals(numero)).ToList();
+               
             }
         }
 
@@ -117,5 +140,7 @@ namespace WcfServicioTarjetasULACIT
             }
             return composite;
         }
+
+        
     }
 }

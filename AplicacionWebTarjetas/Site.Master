@@ -53,7 +53,7 @@
                   <li><a href="/Views/frmConsultarEmisoresPorDescripcion.aspx"> Consultar Emisores por Nombre</a></li>
                   <li><a href="/Views/frmConsultarEmisoresPorNumeroTarjeta.aspx">Consultar Emisores por numero de Tarjeta </a></li>
                   <li><a href="/Views/frmConsultarInformacionTarjeta.aspx">Consultar Informacion de Tarjetas</a></li>
-                  <li><a href="/Views/frmConsultarTarjetaValidez.aspx">Consultar Informacion de Tarjetas</a></li>
+                  <li><a href="/Views/frmConsultarTarjetaValidez.aspx">Consultar Validez de Tarjetas</a></li>
                 </ul>
               </li>
               <li>

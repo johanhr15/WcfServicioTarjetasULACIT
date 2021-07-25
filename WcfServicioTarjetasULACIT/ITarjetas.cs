@@ -33,6 +33,10 @@ namespace WcfServicioTarjetasULACIT
         [OperationContract]
         IEnumerable<Tarjeta> ConsultarInformacionTarjeta(string numero);
 
+        [OperationContract]
+        string ConsultarValidezTarjeta(string numero);
+        
+
         // TODO: Add your service operations here
     }
 

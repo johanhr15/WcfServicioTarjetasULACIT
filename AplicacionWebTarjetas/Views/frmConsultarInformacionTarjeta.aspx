@@ -5,7 +5,7 @@
     <h1>Consultar Informacion de Tarjetas por Numero de Tarjeta</h1>
 
     </div>
-    <asp:TextBox ID="txtBusqueda" Placeholder="Digite su numero tarjeta"
+    <asp:TextBox ID="txtBusqueda" Placeholder="Digite su numero tarjeta completo"
         runat="server" CssClass="form-control"></asp:TextBox>
     <asp:Button ID="btnConsultar" runat="server" Text="Consultar" CssClass="btn btn-primary " OnClick="btnConsultar_Click" />
     <asp:GridView ID="gvEmisores" runat="server" CssClass="table table-sm" HeaderStyle-BackColor="LightBlue"

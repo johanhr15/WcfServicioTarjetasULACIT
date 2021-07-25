@@ -379,6 +379,12 @@ namespace AplicacionWebTarjetas.ServicioTarjetas {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarInformacionTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarInformacionTarjetaResponse")]
         System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[]> ConsultarInformacionTarjetaAsync(string numero);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarValidezTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarValidezTarjetaResponse")]
+        string ConsultarValidezTarjeta(string numero);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITarjetas/ConsultarValidezTarjeta", ReplyAction="http://tempuri.org/ITarjetas/ConsultarValidezTarjetaResponse")]
+        System.Threading.Tasks.Task<string> ConsultarValidezTarjetaAsync(string numero);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -454,6 +460,14 @@ namespace AplicacionWebTarjetas.ServicioTarjetas {
         
         public System.Threading.Tasks.Task<AplicacionWebTarjetas.ServicioTarjetas.Tarjeta[]> ConsultarInformacionTarjetaAsync(string numero) {
             return base.Channel.ConsultarInformacionTarjetaAsync(numero);
+        }
+        
+        public string ConsultarValidezTarjeta(string numero) {
+            return base.Channel.ConsultarValidezTarjeta(numero);
+        }
+        
+        public System.Threading.Tasks.Task<string> ConsultarValidezTarjetaAsync(string numero) {
+            return base.Channel.ConsultarValidezTarjetaAsync(numero);
         }
     }
 }
